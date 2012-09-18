@@ -1,0 +1,10 @@
+<h2>Your Persona cards</h2>
+<% if (cards.length) { %>
+   <ul>
+   <% cards.forEach(function (card) { %>
+      <li><%=: card.name| capitalize %></li>
+   <% }); %>
+   </ul>
+<% } else { %>
+   <p>You don't have any!</p>
+<% } %>
