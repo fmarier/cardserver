@@ -5,6 +5,7 @@
         "password": "nodeuser"
     },
     "browserid": {
+        "includejs": "http://127.0.0.1:10002/include.js",
         "origin": "http://127.0.0.1:10002",
         "verifier": {
             "host": "127.0.0.1",
