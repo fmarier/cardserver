@@ -1,0 +1,18 @@
+{
+  "processes": [
+    "bin/cardserver.js"
+  ],
+  "env": {
+    "BROWSERID_ORIGIN": "https://profilecards.personatest.org",
+    "BROWSERID_VERIFIER_HOST": "profilecards.personatest.org",
+    "BROWSERID_VERIFIER_PORT": "443",
+    "BROWSERID_VERIFIER_SCHEME": "https",
+    "PUBLIC_URL": "https://cardserver.personatest.org"
+  },
+  "packages": [
+    "mysql-server"
+  ],
+  "hooks": {
+    "postcreate": "scripts/post_create.sh"
+  }
+}

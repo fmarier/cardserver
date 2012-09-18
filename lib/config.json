@@ -1,0 +1,19 @@
+{
+    "database": {
+        "name": "cardserver",
+        "user": "nodeuser",
+        "password": "nodeuser"
+    },
+    "browserid": {
+        "origin": "http://127.0.0.1:10002",
+        "verifier": {
+            "host": "127.0.0.1",
+            "port": 10000,
+            "scheme": "http"
+        }
+    },
+    "bind_to": {
+        "port": 9000
+    },
+    "public_url" : "http://127.0.0.1:9000"
+}
