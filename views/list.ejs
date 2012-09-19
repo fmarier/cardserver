@@ -2,7 +2,13 @@
 <% if (cards.length) { %>
    <ul>
    <% cards.forEach(function (card) { %>
-      <li><%= card.name %></li>
+      <li>
+      <form action="/delete" method="POST">
+      <input type="hidden" name="id" value="<%= card.id %>">
+      <%= card.name %>
+      <input type="submit" value="Delete">
+      </form>
+      </li>
    <% }); %>
    </ul>
 <% } else { %>
