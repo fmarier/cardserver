@@ -2,7 +2,7 @@
 <% if (cards.length) { %>
    <ul>
    <% cards.forEach(function (card) { %>
-      <li><%=: card.name| capitalize %></li>
+      <li><%= card.name %></li>
    <% }); %>
    </ul>
 <% } else { %>
